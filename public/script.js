@@ -34,5 +34,11 @@ document.getElementById('botaoBuscar').addEventListener('click', async () => {
 });
 
 document.getElementById('botaoTema').addEventListener('click', () => {
-    document.body.classList.toggle('tema-escuro');
+    const temaEscuroAtivo = document.body.classList.toggle('tema-escuro');
+
+    if (temaEscuroAtivo) {
+        document.getElementById('botaoTema').innerHTML = 'Tema Claro <i class="fa-solid fa-sun"></i>';
+    } else {
+        document.getElementById('botaoTema').innerHTML = 'Tema Escuro <i class="fa-solid fa-moon"></i>';
+    }
 });

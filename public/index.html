@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4b52052dc5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet"
-  />
   <body>
-    <div class="container">
+    <div id="containerBotao-tema">
+      <button id="botaoTema">Tema Escuro<i class="fa-solid fa-moon"></i></button>
+    </div>
+    <div id="containerBusca">
       <h1>Searchfy</h1>
       <input
         type="text"
@@ -25,7 +32,8 @@
         required
       />
       <button id="botaoBuscar">Buscar</button>
-      <button id="botaoTema">Mudar Tema</button>
+    </div>
+    <div class="container">
       <div id="resultado" class="resultado"></div>
     </div>
     <script src="script.js"></script>
