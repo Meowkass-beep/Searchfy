@@ -8,7 +8,7 @@
 h1 {
     font-weight: bold;
     font-size: 2rem;
-    transition: color 0.1s, background-color 0.3s;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: color 0.1s;
+    transition: color 0.3s;
 }
 
 #containerBusca {
@@ -42,7 +42,7 @@ body {
     padding: 10px 0;
     z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 
 #containerBotao-tema {
@@ -62,7 +62,7 @@ input {
     margin: 5px 0;
     border: 1px solid #000;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
 }
 
 button {
@@ -71,7 +71,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
 button#botaoBuscar {
@@ -125,8 +125,7 @@ body.tema-escuro button#botaoBuscar {
 }
 
 body.tema-escuro button#botaoBuscar:hover {
-    background-color: #c2c2c2;
-    color: #000;
+    background-color: #cecece;
 }
 
 body.tema-escuro button#botaoTema {
@@ -135,8 +134,7 @@ body.tema-escuro button#botaoTema {
 }
 
 body.tema-escuro button#botaoTema:hover {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #262626;
 }
 
 body.tema-escuro #containerBusca {
