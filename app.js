@@ -7,8 +7,14 @@ const app = express();
 const port = 3000;
 
 async function getSpotifyCredentials() {
-    const segredos = await fs.readFile('./secret.json', 'utf-8');
-    return JSON.parse(segredos);
+    const clientId = process.env.SPOTIFY_CLIENT_ID;
+    const clientSegredo = process.env.SPOTIFY_CLIENT_SECRET;
+
+    if (!clientId || !clientSegredo) {
+        throw new Error('Credenciais do Spotify não configuradas');
+    }
+
+    return { clientId, clientSegredo };
 }
 
 app.use(express.static('public'));
