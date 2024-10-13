@@ -18,7 +18,7 @@ app.get('/artist', async (req, res) => {
 
     try {
         const { clientId, clientSegredo } = await getSpotifyCredentials();
-        
+
         const parametros = new URLSearchParams();
         parametros.append('grant_type', 'client_credentials');
 
@@ -39,6 +39,11 @@ app.get('/artist', async (req, res) => {
                 'Authorization': `Bearer ${tokenAcesso}`,
             },
         });
+
+        const responseText = await resultadoBusca.text(); // Pega a resposta como texto
+        console.log(responseText); // Exibe no console
+        const dadosBusca2 = JSON.parse(responseText); // Tente analisar o JSON
+        console.log(dadosBusca2)
 
         const dadosBusca = await resultadoBusca.json();
         const artista = dadosBusca.artists.items[0];
