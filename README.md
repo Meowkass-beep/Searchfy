@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="#"><img src=https://imgur.com/a/3mCBJfO" alt="Searchfy" width="200"></a>
+  <a href="#"><img src=https://i.imgur.com/apV09mS.png" alt="Searchfy" width="200"></a>
   <br>
   Searchfy
   <br>
