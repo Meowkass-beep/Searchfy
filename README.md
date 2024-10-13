@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">Uma aplicação web minimalista para buscar informações sobre artistas na API do Spotify.</h4>
+<h4 align="center">Uma simples aplicação web para buscar informações sobre artistas na API do Spotify.</h4>
 
 ## Principais Funcionalidades
 
