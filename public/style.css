@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#botaoBuscar {
+    background-color: #000;
+    color: #fff;
+    transition: 0.1s;
+}
+
+button#botaoBuscar:hover {
+    background-color: #303030;
+    color: #fff;
+}
+
+button#botaoTema {
+    background-color: #fff;
+    color: #000;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 10px;
+    display: none;
+}
+
+.resultado img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+body.tema-escuro {
+    background-color: #000;
+    color: #fff;
+}
+
+body.tema-escuro input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+body.tema-escuro button#botaoBuscar {
+    background-color: #fff;
+    color: #000;
+    transition: 0.1s;
+}
+
+body.tema-escuro button#botaoBuscar:hover {
+    background-color: #d8d8d8;
+    color: #000;
+}
+
+body.tema-escuro button#botaoTema {
+    background-color: #000;
+    color: #fff;
+}

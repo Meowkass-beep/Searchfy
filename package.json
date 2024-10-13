@@ -1,0 +1,17 @@
+{
+  "name": "searchfy",
+  "version": "1.0.0",
+  "description": "A simple artist search web page using spotify's api",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2"
+  }
+}
