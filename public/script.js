@@ -8,10 +8,12 @@ document.getElementById('botaoBuscar').addEventListener('click', async () => {
             throw new Error(`Erro: ${resposta.status}`);
         }
         const resultado = await resposta.json();
-        
+
         divResultado.style.display = 'block';
 
-        console.log(resultado.genres);
+        if (resposta.genres) {
+            console.log(resultado.genres);
+        }
 
         if (resultado.error) {
             divResultado.innerHTML = `<p>Erro: ${resultado.error}</p>`;
