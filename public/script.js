@@ -11,6 +11,8 @@ document.getElementById('botaoBuscar').addEventListener('click', async () => {
         
         divResultado.style.display = 'block';
 
+        console.log(resultado.genres);
+
         if (resultado.error) {
             divResultado.innerHTML = `<p>Erro: ${resultado.error}</p>`;
             return;
