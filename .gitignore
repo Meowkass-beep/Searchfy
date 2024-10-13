@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # json files
-./secret.json
+secret.json
