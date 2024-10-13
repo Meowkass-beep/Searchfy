@@ -26,8 +26,13 @@ document.getElementById('botaoBuscar').addEventListener('click', async () => {
             </a>
             <h2>${resultado.name}</h2>
             <p>Seguidores: ${resultado.followers.total}</p>
+            `;
+
+        if (resposta.genres) {
+            divResultado.innerHTML = `
             <p>Gêneros: ${resultado.genres.join(', ')}</p>
-        `;
+            `;
+        }
     } catch (error) {
         console.error('Erro:', error);
         divResultado.style.display = 'block';
