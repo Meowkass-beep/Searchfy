@@ -131,3 +131,4 @@ dist
 
 # json files
 secret.json
+.vercel

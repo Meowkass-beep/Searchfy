@@ -4,7 +4,6 @@ import fetch from 'node-fetch';
 import btoa from 'btoa';
 
 const app = express();
-const port = 3000;
 
 async function getSpotifyCredentials() {
     const clientId = process.env.SPOTIFY_CLIENT_ID;
@@ -24,7 +23,7 @@ app.get('/artist', async (req, res) => {
 
     try {
         const { clientId, clientSegredo } = await getSpotifyCredentials();
-
+        
         const parametros = new URLSearchParams();
         parametros.append('grant_type', 'client_credentials');
 
@@ -46,11 +45,6 @@ app.get('/artist', async (req, res) => {
             },
         });
 
-        const responseText = await resultadoBusca.text(); // Pega a resposta como texto
-        console.log(responseText); // Exibe no console
-        const dadosBusca2 = JSON.parse(responseText); // Tente analisar o JSON
-        console.log(dadosBusca2)
-
         const dadosBusca = await resultadoBusca.json();
         const artista = dadosBusca.artists.items[0];
 
@@ -65,6 +59,5 @@ app.get('/artist', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
-});
+// Exportando o handler para o Vercel
+export default app;
